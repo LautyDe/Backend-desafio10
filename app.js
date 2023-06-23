@@ -16,7 +16,7 @@ import mongoStore from "connect-mongo";
 import { URI } from "./src/utils.js";
 //passport
 import passport from "passport";
-import "./src/passport/strategies.js";
+import "./src/strategies/index.js";
 
 const app = express();
 const PORT = 8080;
