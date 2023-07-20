@@ -46,10 +46,10 @@ router.get("/", async (req, res) => {
     hasPrevPage: products.hasPrevPage,
     hasNextPage: products.hasNextPage,
     prevLink: products.hasPrevPage
-      ? `http://localhost:8080/api/products?page=${products.prevPage}`
+      ? `http://localhost:8080/api/products?page=${products.prevPage}&?limit=${limit}`
       : null,
     nextLink: products.hasNextPage
-      ? `http://localhost:8080/api/products?page=${products.nextPage}`
+      ? `http://localhost:8080/api/products?page=${products.nextPage}&?limit=${limit}`
       : null,
   };
   if (info) {

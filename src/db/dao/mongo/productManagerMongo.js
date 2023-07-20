@@ -49,8 +49,8 @@ export default class ProductManager {
 
       const options = {
         page: page || 1,
-        limit: limit || 10,
-        sort: sort,
+        limit: limit || 5,
+        sort,
         lean: true,
       };
 
